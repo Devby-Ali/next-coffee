@@ -1,0 +1,20 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        dana: ['var(--font-dana)', 'sans-serif'],
+        morabba: ['var(--font-morabba)', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
