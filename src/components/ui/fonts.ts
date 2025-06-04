@@ -1,5 +1,4 @@
-import localFont from 'next/font/local'
-
+import localFont from 'next/font/local';
 
 export const dana = localFont({
   src: [
@@ -21,8 +20,8 @@ export const dana = localFont({
   ],
   variable: '--font-dana',
   display: 'swap',
-})
-
+  fallback: ['system-ui', 'arial'],
+});
 
 export const morabba = localFont({
   src: [
@@ -44,4 +43,5 @@ export const morabba = localFont({
   ],
   variable: '--font-morabba',
   display: 'swap',
-})
+  fallback: ['system-ui', 'arial'],
+});
