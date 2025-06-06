@@ -4,8 +4,8 @@ import Icon from '../Icon';
 
 function Header() {
   return (
-    <header className="fixed top-9 right-0 left-0 z-50 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
-      <div className="flex justify-between items-center w-full">
+    <header>
+      <div className="fixed top-9 right-0 left-0 z-50 hidden md:flex items-center justify-between w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         {/* <!-- Logo & Menu --> */}
         <nav className="flex h-14 items-center gap-x-6 lg:gap-x-9">
           {/* <!-- Logo --> */}
