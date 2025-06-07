@@ -9,7 +9,7 @@ function Header() {
             قهوه عربیکا تانزانیا
           </h2>
           <span className="font-morabba font-light text-xl md:text-5xl/[64px]">یک فنجان بالانس!</span>
-          <span className="block w-[100px] h-px md:h-0.5 bg-orange-300 my-3 md:my-8"></span>
+          <span className="block w-25 h-px md:h-0.5 bg-orange-300 my-3 md:my-8"></span>
           <p className="max-w-[201px] md:max-w-[460px] text-xs md:text-2xl">
             قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف
             کمربند قهوه کشت میشود.
@@ -24,10 +24,10 @@ function Header() {
       </div>
 
       {/* <!-- Curve --> */}
-      <Icon name="curve" className="absolute bottom-0 right-0 left-0 mx-auto hidden md:inline-block w-[100px] h-[22px] text-gray-100 dark:text-zinc-800"/>
+      <Icon name="curve" className="absolute bottom-0 right-0 left-0 mx-auto hidden md:inline-block w-25 h-5.5 text-gray-100 dark:text-zinc-800"/>
 
       {/* <!-- Arrow Circle --> */}
-      <div className="absolute bottom-0 right-0 left-0 mx-auto translate-y-1/2 hidden md:flex-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full">
+      <div className="absolute bottom-0 right-0 left-0 mx-auto translate-y-1/2 hidden md:flex-center w-7.5 h-7.5 border-2 border-orange-300 rounded-full">
         <Icon name="chevron-down-mini" className="w-5 h-5 text-zinc-700 dark:text-white"/>
       </div>
     </section>

@@ -230,16 +230,6 @@
     height: 1px;
   }
 
-  .dev_info {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .dev_info-hover {
-    opacity: 1;
-    visibility: visible;
-  }
-
 }
 
 @utility flex-center {

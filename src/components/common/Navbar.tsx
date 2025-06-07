@@ -173,7 +173,7 @@ function Navbar() {
           <div className="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
             <div className="flex gap-x-3.5">
               <Icon name="logo" className="w-[41px] h-10 text-orange-300" />
-              <Icon name="logo-type" className="w-[100px] h-10 text-orange-300" />
+              <Icon name="logo-type" className="w-25 h-10 text-orange-300" />
             </div>
             <div className="nav-close-btn">
               <Icon name="x-mark-mini" className="w-5 h-5 text-zinc-600 dark:text-white" />
@@ -268,7 +268,7 @@ function Navbar() {
 
         {/* <!-- Logo Type --> */}
         <div>
-          <Icon name="logo-type" className="w-[100px] h-10 text-orange-300" />
+          <Icon name="logo-type" className="w-25 h-10 text-orange-300" />
         </div>
 
         {/* <!-- Cart Icon --> */}
@@ -293,7 +293,7 @@ function Navbar() {
                 src="/images/products/p1.png"
                 width={20}
                 height={20}
-                className="w-[90px] h-[90px]"
+                className="w-22.5 h-22.5"
                 alt="product 1"
               />
               <div className="flex flex-col justify-between gap-y-1.5">
@@ -316,7 +316,7 @@ function Navbar() {
                 src="/images/products/p2.png"
                 width={20}
                 height={20}
-                className="w-[90px] h-[90px]"
+                className="w-22.5 h-22.5"
                 alt="product 2"
               />
               <div className="flex flex-col justify-between gap-y-1.5">
