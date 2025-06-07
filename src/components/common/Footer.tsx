@@ -21,7 +21,7 @@ function Footer() {
           <div>
             <div className="flex gap-x-5 mb-6 md:mb-4.5 text-gray-300">
               <Icon name="logo" className="w-[57px] h-13.5" />
-              <Icon name="logo-type" className="w-34.5 h-[54px]" />
+              <Icon name="logo-type" className="w-34.5 h-13.5" />
             </div>
             <p className="xl:max-w-[606px] text-lg md:text-xl/[48px]">
               ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی

@@ -86,11 +86,11 @@
     @apply flex;
   }
 
-  .submenu__item--active {
+  .submenu__item:hover {
     @apply relative text-orange-300 pr-2.5;
   }
 
-  .submenu__item--active::after {
+  .submenu__item::after {
     content: '';
     display: block;
     width: 4px;
