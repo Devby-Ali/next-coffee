@@ -1,15 +1,15 @@
 import Header from '@/components/common/Header';
 import { fetchHomePageData } from '@/lib/data';
 
-export default async function Home () {
+export default async function Home() {
   const data = await fetchHomePageData();
-  console.log(data)
   return (
-    <main>
+    <>
       <Header />
-    </main>
+      <main></main>
+    </>
   );
-};
+}
 
 // export async function getStaticProps() {
 //   const servicesResponse = await fetch("http://localhost:4000/services");
