@@ -5,10 +5,10 @@ function Header() {
     <section className="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-[url(../../public/images/headerBgMobile.webp)] md:bg-[url(../../public/images/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top]">
       <div className="container 2xl:px-28 relative h-full md:min-h-screen flex justify-end items-center overflow-y-hidden">
         <div className="text-white">
-          <h2 className="text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">
+          <h2 className="font-morabba font-bold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">
             قهوه عربیکا تانزانیا
           </h2>
-          <span className="text-xl md:text-5xl/[64px]">یک فنجان بالانس!</span>
+          <span className="font-morabba font-light text-xl md:text-5xl/[64px]">یک فنجان بالانس!</span>
           <span className="block w-[100px] h-px md:h-0.5 bg-orange-300 my-3 md:my-8"></span>
           <p className="max-w-[201px] md:max-w-[460px] text-xs md:text-2xl">
             قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف
