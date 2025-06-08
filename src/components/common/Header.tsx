@@ -1,6 +1,6 @@
 import Icon from "../Icon";
 
-function Header() {
+function Header(): React.JSX.Element {
   return (
     <section className="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-[url(../../public/images/headerBgMobile.webp)] md:bg-[url(../../public/images/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top]">
       <div className="container 2xl:px-28 relative h-full md:min-h-screen flex justify-end items-center overflow-y-hidden">

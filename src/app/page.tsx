@@ -1,5 +1,7 @@
 import Header from '@/components/common/Header';
-import CategoryBanner from '@/components/Template/CategoryBanner';
+import BannerCategory from '@/components/Template/BannerCategory';
+import BestSellingProducts from '@/components/Template/BestSellingProducts';
+import ProductCategory from '@/components/Template/ProductCategory';
 import Products from '@/components/Template/Products';
 import { fetchHomePageData } from '@/lib/data';
 
@@ -10,7 +12,9 @@ export default async function Home() {
       <Header />
       <main>
         <Products />
-        <CategoryBanner/>
+        <BannerCategory />
+        <ProductCategory />
+        <BestSellingProducts />
       </main>
     </>
   );
