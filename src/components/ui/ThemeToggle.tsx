@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Icon from '../Icon';
 
-export default function ThemeToggle() {
+export default function ThemeToggle({isSidebar}) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -24,9 +24,9 @@ export default function ThemeToggle() {
   return (
     <div onClick={toggleTheme} className="toggle-theme cursor-pointer">
       {darkMode ? (
-        <Icon name="sun" className="hidden dark:inline-block w-8 h-8" />
+        <Icon name="sun" className={`hidden dark:inline-block ${isSidebar ? "w-5 h-5" : "w-8 h-8"}`} />
       ) : (
-        <Icon name="moon" className="inline-block dark:hidden w-8 h-8" />
+        <Icon name="moon" className={`inline-block dark:hidden ${isSidebar ? "w-5 h-5" : "w-8 h-8"}`} />
       )}
     </div>
   );
