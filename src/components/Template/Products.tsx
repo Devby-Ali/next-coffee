@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Icon from '../Icon';
-import SectionHeader from './SectionHeader';
+import SectionHeader from '../ui/SectionHeader';
 
 function Products() {
   return (
