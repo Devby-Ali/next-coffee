@@ -22,7 +22,7 @@ export default function Sidebar() {
     <>
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-all duration-300 ${
+        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-50 transition-all duration-300 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
         onClick={() => setIsOpen(false)}
@@ -30,8 +30,8 @@ export default function Sidebar() {
 
       {/* Mobile Menu Button */}
 
-      <div className="md:hidden fixed top-0 right-0 left-0 z-40 flex items-center justify-between px-4 py-3 bg-white dark:bg-zinc-700 shadow-sm">
-        <div className='cursor-pointer' onClick={() => setIsOpen(true)}>
+      <div className="md:hidden fixed top-0 h-16 right-0 left-0 z-40 flex items-center justify-between px-4 py-3 bg-white dark:bg-zinc-700 shadow-sm">
+        <div className="cursor-pointer" onClick={() => setIsOpen(true)}>
           <Icon name="bars-3" className="w-6 h-6 text-zinc-700 dark:text-white" />
         </div>
         <Icon name="logo-type" className="w-24 h-10 text-orange-300" />
@@ -61,26 +61,28 @@ export default function Sidebar() {
             className="p-2 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-lg transition-colors"
             onClick={() => setIsOpen(false)}
           >
-            <Icon name="x-mark-mini" className="w-5 h-5 text-zinc-600 dark:text-white cursor-pointer" />
+            <Icon
+              name="x-mark-mini"
+              className="w-5 h-5 text-zinc-600 dark:text-white cursor-pointer"
+            />
           </div>
         </div>
 
         {/* Sidebar Content */}
-        <div className="flex items-center h-10 bg-orange-200/20 text-orange-300 mb-4 pr-2.5 rounded-md">
-          <a href="#" className="flex items-center gap-x-2">
-            <Icon name="home" className="w-5 h-5" />
-            صفحه اصلی
-          </a>
-        </div>
 
         <ul className="*:px-2.5 space-y-6 text-zinc-600 dark:text-white">
           <li>
-            <div className={`flex items-center justify-between ${submenu && 'text-orange-300'}`}>
-              <a
-                href="#"
-                onClick={() => setSubmenu(!submenu)}
-                className="flex items-center gap-x-2"
-              >
+          <a href="#" className="flex items-center gap-x-2 sidebar__menu--active">
+            <Icon name="home" className="w-5 h-5" />
+            صفحه اصلی
+          </a>
+          </li>
+          <li>
+            <div
+              onClick={() => setSubmenu(!submenu)}
+              className={`flex items-center justify-between cursor-pointer ${submenu && 'text-orange-300'}`}
+            >
+              <a href="#" className="flex items-center gap-x-2">
                 <Icon name="shopping-bag" className="w-5 h-5" />
                 فروشگاه
               </a>

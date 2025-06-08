@@ -1,4 +1,5 @@
 import Header from '@/components/common/Header';
+import Products from '@/components/ui/Products';
 import { fetchHomePageData } from '@/lib/data';
 
 export default async function Home() {
@@ -6,7 +7,9 @@ export default async function Home() {
   return (
     <>
       <Header />
-      <main></main>
+      <main>
+        <Products/>
+      </main>
     </>
   );
 }
