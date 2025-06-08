@@ -1,4 +1,5 @@
 import Header from '@/components/common/Header';
+import CategoryBanner from '@/components/Template/CategoryBanner';
 import Products from '@/components/Template/Products';
 import { fetchHomePageData } from '@/lib/data';
 
@@ -9,6 +10,7 @@ export default async function Home() {
       <Header />
       <main>
         <Products />
+        <CategoryBanner/>
       </main>
     </>
   );

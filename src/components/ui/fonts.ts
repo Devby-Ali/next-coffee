@@ -14,7 +14,7 @@ export const dana = localFont({
     },
     {
       path: '../../../public/fonts/Dana/DanaFaNum-DemiBold.woff2',
-      weight: '700',
+      weight: '600',
       style: 'normal',
     },
   ],

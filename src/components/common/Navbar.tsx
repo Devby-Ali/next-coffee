@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '../Icon';
 import ThemeToggle from '../ui/ThemeToggle';
-import Sidebar from './Sidebar';
+import MobileNav from './MobileNav';
 
 function Navbar() {
   return (
@@ -18,7 +18,7 @@ function Navbar() {
 
             {/* <!-- Menu --> */}
             <ul className="flex gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightest *:leading-[56px]">
-              <li className="font-dana text-orange-200">
+              <li className="font-dana menu__item--active">
                 <Link href="/">صفحه اصلی</Link>
               </li>
 
@@ -67,7 +67,7 @@ function Navbar() {
                 {/* <!-- Cart Box --> */}
                 <div className="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all delay-75">
                   {/* <!-- Cart Header --> */}
-                  <div className="flex items-center justify-between font-dana text-xs tracking-tighter">
+                  <div className="flex items-center justify-between font-dana font-medium text-xs tracking-tighter">
                     <span className="text-gray-300">1 مورد</span>
                     <a href="#" className="flex items-center text-orange-300">
                       مشاهده ی سبد خرید
@@ -86,14 +86,14 @@ function Navbar() {
                         alt="product 1"
                       />
                       <div className="flex flex-col justify-between">
-                        <h4 className="font-dana text-zinc-700 dark:text-white text-base line-clamp-2">
+                        <h4 className="font-dana font-medium text-zinc-700 dark:text-white text-base line-clamp-2">
                           قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
                         </h4>
                         <div>
                           <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
                             14.500 تومان تخفیف
                           </span>
-                          <div className="text-zinc-700 dark:text-white font-dana font-bold">
+                          <div className="text-zinc-700 dark:text-white font-dana font-semibold">
                             175,000
                             <span className="font-dana text-sm">تومان</span>
                           </div>
@@ -109,14 +109,14 @@ function Navbar() {
                         alt="product 2"
                       />
                       <div className="flex flex-col justify-between">
-                        <h4 className="font-dana text-zinc-700 dark:text-white text-base line-clamp-2">
+                        <h4 className="font-dana font-medium text-zinc-700 dark:text-white text-base line-clamp-2">
                           قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
                         </h4>
                         <div>
                           <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
                             14.500 تومان تخفیف
                           </span>
-                          <div className="text-zinc-700 dark:text-white font-dana font-bold">
+                          <div className="text-zinc-700 dark:text-white font-dana font-semibold">
                             175,000
                             <span className="font-dana text-sm">تومان</span>
                           </div>
@@ -128,10 +128,10 @@ function Navbar() {
                   {/* <!-- Cart Footer --> */}
                   <div className="flex justify-between mt-5">
                     <div>
-                      <span className="font-dana text-gray-300 text-xs tracking-tighter">
+                      <span className="font-dana font-medium text-gray-300 text-xs tracking-tighter">
                         مبلغ قابل پرداخت
                       </span>
-                      <div className="text-zinc-700 dark:text-white font-dana font-bold">
+                      <div className="text-zinc-700 dark:text-white font-dana font-semibold">
                         350,000
                         <span className="font-dana text-sm">تومان</span>
                       </div>
@@ -151,7 +151,7 @@ function Navbar() {
               <Icon name="moon" className="inline-block dark:hidden w-8 h-8" />
               <Icon name="sun" className="hidden dark:inline-block w-8 h-8" />
             </div> */}
-              <ThemeToggle />
+              <ThemeToggle isSidebar={false} />
             </div>
             {/* <!-- Devide Border --> */}
 
@@ -167,7 +167,7 @@ function Navbar() {
 
 
       </header>
-      <Sidebar />
+      <MobileNav />
     </>
   );
 }
