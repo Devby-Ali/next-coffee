@@ -78,8 +78,12 @@
     }
   }
 
+  .menu__item--active {
+    @apply font-medium text-orange-200;
+  }
+
   .sidebar__menu--active {
-    @apply h-10 bg-orange-200/20 text-orange-300 pr-2.5 -mx-2.5 rounded-md
+    @apply bg-orange-200/20 text-orange-300 pr-2.5 py-2 -mb-1.5 -mx-2.5 rounded-md;
   }
 
   .submenu {
@@ -204,7 +208,7 @@
 
   .services::after,
   .services::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     inset: 0;
@@ -233,7 +237,6 @@
     width: calc(100% - 2rem);
     height: 1px;
   }
-
 }
 
 @utility flex-center {
