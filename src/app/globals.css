@@ -202,6 +202,13 @@
     @apply flex-center w-9 h-9 md:w-10 md:h-10 bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white shadow-normal rounded-full hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all;
   }
 
+  .swiper-button-next::after,
+  .swiper-button-prev::after,
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
   .services {
     @apply relative;
   }
