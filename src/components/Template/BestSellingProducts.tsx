@@ -2,9 +2,7 @@
 
 import React, { useRef } from 'react';
 import Icon from '../Icon';
-import SectionHeader from '../ui/SectionHeader';
 import Image from 'next/image';
-import { Navigation } from 'swiper/modules';
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -42,14 +40,29 @@ function BestSellingProducts(): React.JSX.Element {
         </div>
         {/* <!-- Slider main container --> */}
         <Swiper
-          modules={[Navigation]}
-          spaceBetween={50}
-          slidesPerView={3}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1536: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
+          spaceBetween={15}
+          slidesPerView={2}
           navigation={false}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
-          onSlideChange={() => console.log('slide change')}
         >
           {/* <!-- Slides --> */}
           <SwiperSlide>
