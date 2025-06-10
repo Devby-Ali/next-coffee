@@ -77,12 +77,12 @@ function BestSellingProducts(): React.JSX.Element {
                   alt="product-2"
                 />
               </div>
-              <h5 className="font-DanaMedium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+              <h5 className="font-medium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
                 قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
               </h5>
               <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
                 <div className="text-teal-600 dark:text-emerald-500">
-                  <span className="font-DanaDemiBold text-base md:text-xl">180,000</span>
+                  <span className="font-semibold text-base md:text-xl">180,000</span>
                   <span className="text-xs md:text-sm tracking-tighter">تومان</span>
                 </div>
               </div>
@@ -121,7 +121,7 @@ function BestSellingProducts(): React.JSX.Element {
                   alt="product-3"
                 />
               </div>
-              <h5 className="font-DanaMedium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+              <h5 className="font-medium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
                 قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
               </h5>
               <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
@@ -167,12 +167,12 @@ function BestSellingProducts(): React.JSX.Element {
                   alt="product-4"
                 />
               </div>
-              <h5 className="font-DanaMedium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+              <h5 className="font-medium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
                 قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
               </h5>
               <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
                 <div className="text-teal-600 dark:text-emerald-500">
-                  <span className="font-DanaDemiBold text-base md:text-xl">155,000</span>
+                  <span className="font-semibold text-base md:text-xl">155,000</span>
                   <span className="text-xs md:text-sm tracking-tighter">تومان</span>
                 </div>
               </div>
@@ -207,12 +207,12 @@ function BestSellingProducts(): React.JSX.Element {
                   alt="product-5"
                 />
               </div>
-              <h5 className="font-DanaMedium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+              <h5 className="font-medium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
                 قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
               </h5>
               <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
                 <div className="text-teal-600 dark:text-emerald-500">
-                  <span className="font-DanaDemiBold text-base md:text-xl">174,000</span>
+                  <span className="font-semibold text-base md:text-xl">174,000</span>
                   <span className="text-xs md:text-sm tracking-tighter">تومان</span>
                 </div>
               </div>
@@ -262,12 +262,12 @@ function BestSellingProducts(): React.JSX.Element {
                   alt="product-6"
                 />
               </div>
-              <h5 className="font-DanaMedium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+              <h5 className="font-medium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
                 قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
               </h5>
               <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
                 <div className="text-teal-600 dark:text-emerald-500">
-                  <span className="font-DanaDemiBold text-base md:text-xl">158,000</span>
+                  <span className="font-semibold text-base md:text-xl">158,000</span>
                   <span className="text-xs md:text-sm tracking-tighter">تومان</span>
                 </div>
               </div>
@@ -304,16 +304,16 @@ function BestSellingProducts(): React.JSX.Element {
                   loading="lazy"
                   alt="product-7"
                 />
-                <span className="absolute top-1.5 right-1.5 block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] font-DanaDemiBold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
+                <span className="absolute top-1.5 right-1.5 block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] font-semibold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
                   12%
                 </span>
               </div>
-              <h5 className="font-DanaMedium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+              <h5 className="font-medium text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
                 قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
               </h5>
               <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
                 <div className="text-teal-600 dark:text-emerald-500">
-                  <span className="font-DanaDemiBold text-base md:text-xl">154,000</span>
+                  <span className="font-semibold text-base md:text-xl">154,000</span>
                   <span className="text-xs md:text-sm tracking-tighter">تومان</span>
                 </div>
                 <div className="offer">
