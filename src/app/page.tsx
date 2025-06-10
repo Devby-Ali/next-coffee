@@ -6,6 +6,7 @@ import CoffeeClub from '@/components/Template/CoffeeClub';
 import ContactUs from '@/components/Template/ContactUs';
 import ProductCategory from '@/components/Template/ProductCategory';
 import Products from '@/components/Template/Products';
+import Services from '@/components/Template/Services';
 import { fetchHomePageData } from '@/lib/data';
 
 export default async function Home() {
@@ -21,6 +22,7 @@ export default async function Home() {
         <CoffeeClub />
         <Blogs />
         <ContactUs />
+        <Services/>
       </main>
     </>
   );
