@@ -79,8 +79,8 @@ function Navbar() {
                   <div className="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 *:py-5">
                     <div className="flex gap-x-2.5">
                       <Image
-                        width={15}
-                        height={15}
+                        width={300}
+                        height={300}
                         src="/images/products/p1.png"
                         className="w-30 h-30"
                         alt="product 1"
@@ -102,8 +102,8 @@ function Navbar() {
                     </div>
                     <div className="flex gap-x-2.5">
                       <Image
-                        width={15}
-                        height={15}
+                        width={300}
+                        height={300}
                         src="/images/products/p2.png"
                         className="w-30 h-30"
                         alt="product 2"
