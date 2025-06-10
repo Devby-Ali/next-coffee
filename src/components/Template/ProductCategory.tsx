@@ -5,7 +5,7 @@ const ProductCategory = (): React.JSX.Element => {
   return (
     <section className="products-category mb-10 md:mb-20">
       <div className="container">
-        <div className="flex-center font-semibold gap-y-6 gap-x-[27px] md:gap-[65px] flex-wrap">
+        <div className="flex-center font-semibold gap-y-6 gap-x-8 md:gap-16.5 2xl:gap-x-24 flex-wrap">
           <div className="w-25 md:w-50 text-center">
             <a href="#">
               <Image src="/images/categories/category1.png" height={200} width={200} loading="lazy" alt="c1" />
