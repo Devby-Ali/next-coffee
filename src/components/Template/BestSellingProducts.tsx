@@ -22,7 +22,7 @@ function BestSellingProducts(): React.JSX.Element {
             <h3 className="section-title">محصولات پر فروش</h3>
             <span className="section-subtitle">پیشنهاد قهوه خور ها ...</span>
           </div>
-          <div className="flex gap-x-3 md:gap-x-[18px]">
+          <div className="flex gap-x-3 md:gap-x-4.5">
             <div
               className="swiper-button-prev-custom"
               onClick={() => swiperRef.current?.slidePrev()}
@@ -88,7 +88,7 @@ function BestSellingProducts(): React.JSX.Element {
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex items-center gap-x-2.5 md:gap-x-3">
-                  <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
+                  <span className="flex-center w-6.5 h-6.5 md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
                     <Icon name="shopping-cart" className="w-4 h-4 md:w-5.5 md:h-5.5" />
                   </span>
                   <span className="block text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
@@ -131,7 +131,7 @@ function BestSellingProducts(): React.JSX.Element {
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex items-center gap-x-2.5 md:gap-x-3">
-                  <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
+                  <span className="flex-center w-6.5 h-6.5 md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
                     <Icon name="shopping-cart" className="w-4 h-4 md:w-5.5 md:h-5.5" />
                   </span>
                   <span className="block text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
@@ -178,7 +178,7 @@ function BestSellingProducts(): React.JSX.Element {
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex items-center gap-x-2.5 md:gap-x-3">
-                  <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
+                  <span className="flex-center w-6.5 h-6.5 md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
                     <Icon name="shopping-cart" className="w-4 h-4 md:w-5.5 md:h-5.5" />
                   </span>
                   <span className="block text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
@@ -218,7 +218,7 @@ function BestSellingProducts(): React.JSX.Element {
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex items-center gap-x-2.5 md:gap-x-3">
-                  <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
+                  <span className="flex-center w-6.5 h-6.5 md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
                     <Icon name="shopping-cart" className="w-4 h-4 md:w-5.5 md:h-5.5" />
                   </span>
                   <span className="block text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
@@ -273,7 +273,7 @@ function BestSellingProducts(): React.JSX.Element {
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex items-center gap-x-2.5 md:gap-x-3">
-                  <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
+                  <span className="flex-center w-6.5 h-6.5 md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
                     <Icon name="shopping-cart" className="w-4 h-4 md:w-5.5 md:h-5.5" />
                   </span>
                   <span className="block text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
@@ -304,7 +304,7 @@ function BestSellingProducts(): React.JSX.Element {
                   loading="lazy"
                   alt="product-7"
                 />
-                <span className="absolute top-1.5 right-1.5 block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] font-semibold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
+                <span className="absolute top-1.5 right-1.5 block h-5 md:h-7.5 text-xs/[24px] md:text-base/[34px] font-semibold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
                   12%
                 </span>
               </div>
@@ -323,7 +323,7 @@ function BestSellingProducts(): React.JSX.Element {
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex items-center gap-x-2.5 md:gap-x-3">
-                  <span className="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
+                  <span className="flex-center w-6.5 h-6.5 md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white rounded-full cursor-pointer transition-all">
                     <Icon name="shopping-cart" className="w-4 h-4 md:w-5.5 md:h-5.5" />
                   </span>
                   <span className="block text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 rounded-full cursor-pointer transition-all">
