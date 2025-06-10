@@ -1,6 +1,9 @@
 import Header from '@/components/common/Header';
 import BannerCategory from '@/components/Template/BannerCategory';
 import BestSellingProducts from '@/components/Template/BestSellingProducts';
+import Blogs from '@/components/Template/Blogs';
+import CoffeeClub from '@/components/Template/CoffeeClub';
+import ContactUs from '@/components/Template/ContactUs';
 import ProductCategory from '@/components/Template/ProductCategory';
 import Products from '@/components/Template/Products';
 import { fetchHomePageData } from '@/lib/data';
@@ -15,6 +18,9 @@ export default async function Home() {
         <BannerCategory />
         <ProductCategory />
         <BestSellingProducts />
+        <CoffeeClub />
+        <Blogs />
+        <ContactUs />
       </main>
     </>
   );
