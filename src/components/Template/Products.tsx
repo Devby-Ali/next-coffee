@@ -31,7 +31,7 @@ function Products() {
               </span>
             </div>
             <h5 className="font-dana text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
-              قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+              قهوه ترک بن مانو مقدار 250 گرم
             </h5>
             <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
               <div className="text-teal-600 dark:text-emerald-500">
