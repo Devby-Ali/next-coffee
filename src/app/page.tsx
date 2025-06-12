@@ -10,19 +10,19 @@ import Services from '@/components/Template/Services';
 import { fetchHomePageData } from '@/lib/data';
 
 export default async function Home() {
-  const data = await fetchHomePageData();
+  const data = await fetchHomePageData().then((res) => res);
   return (
     <>
       <Header />
       <main>
-        <Products />
+        <Products productsData={data.productsData} />
         <BannerCategory />
         <ProductCategory />
         <BestSellingProducts />
         <CoffeeClub />
         <Blogs />
         <ContactUs />
-        <Services/>
+        <Services />
       </main>
     </>
   );
