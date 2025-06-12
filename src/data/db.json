@@ -65,34 +65,31 @@
       "img": "/images/products/p8.png"
     }
   ],
-  "services": [
+  "productCategory": [
     {
       "id": 1,
-      "title": "Fastest Door Delivery",
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
-      "img": "/images/service-1.jpg",
-      "icon": "faTruck"
+      "title": " قهوه دمی و اسپرسو",
+      "img": "/images/categories/category1.png"
     },
     {
       "id": 2,
-      "title": "Best Quality Coffee",
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
-      "img": "/images/service-2.jpg",
-      "icon": "faCoffee"
+      "title": "لوازم جانبی و تجهیزات",
+      "img": "/images/categories/category2.png"
     },
     {
       "id": 3,
-      "title": "Best Quality Coffee",
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
-      "img": "/images/service-3.jpg",
-      "icon": "faAward"
+      "title": "اسپرسو ساز",
+      "img": "/images/categories/category3.png"
     },
     {
       "id": 4,
-      "title": "Online Table Booking",
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
-      "img": "/images/service-4.jpg",
-      "icon": "faTable"
+      "title": "پک تستر قهوه",
+      "img": "/images/categories/category4.png"
+    },
+    {
+      "id": 5,
+      "title": "قهوه ترک",
+      "img": "/images/categories/category5.png"
     }
   ],
   "newsletters": [
