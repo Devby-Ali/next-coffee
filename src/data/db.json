@@ -2,62 +2,67 @@
   "products": [
     {
       "id": 1,
-      "title": "قهوه ترک بن مانو مقدار 250 گرم",
-      "price": 398430,
-      "desc": "قهوه ترک بن مانو مقدار 250 گرم",
+      "title": "پودر قهوه ترک بن مانو مقدار 250 گرم",
+      "price": 384000,
       "score": 5,
-      "off": 12,
+      "off": 15,
       "img": "/images/products/p1.png"
     },
     {
       "id": 2,
-      "title": "Hot Chocolete",
-      "price": 4,
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.4,
-      "off": 0,
-      "type": "hot",
-      "img": "/images/menu-2.jpg"
+      "title": "پودر قهوه اسپرسو مانوکا مقدار 250 گرم",
+      "price": 41200,
+      "score": 5,
+      "off": 10,
+      "img": "/images/products/p2.png"
     },
     {
       "id": 3,
-      "title": "Ice Cream",
-      "price": 6,
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.9,
-      "off": 0,
-      "type": "cold",
-      "img": "/images/menu-3.jpg"
+      "title": "پودر قهوه اسپرسو پریسکا مقدار 250 گرم",
+      "price": 398430,
+      "score": 5,
+      "off": 10,
+      "img": "/images/products/p3.png"
     },
     {
       "id": 4,
-      "title": "Tea",
-      "price": 3,
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+      "title": "پودر قهوه اسپرسو آرتیمان مقدار 250 گرم",
+      "price": 398430,
       "score": 5,
-      "off": 0,
-      "type": "hot",
-      "img": "/images/menu-4.jpeg"
+      "off": 10,
+      "img": "/images/products/p4.png"
     },
     {
       "id": 5,
-      "title": "Chocolate Milk",
-      "price": 4,
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 3.1,
-      "off": 50,
-      "type": "hot",
-      "img": "/images/menu-5.jpeg"
+      "title": "نورسکا ۹ صبح",
+      "price": 398430,
+      "score": 5,
+      "off": 12,
+      "img": "/images/products/p5.png"
     },
     {
       "id": 6,
-      "title": "Banana Milk",
-      "price": 12,
-      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.9,
-      "off": 0,
-      "type": "cold",
-      "img": "/images/menu-6.jpeg"
+      "title": "نورسکا ۶ عصر",
+      "price": 398430,
+      "score": 5,
+      "off": 12,
+      "img": "/images/products/p6.png"
+    },
+    {
+      "id": 7,
+      "title": "نورسکا ۸ شب",
+      "price": 398430,
+      "score": 5,
+      "off": 12,
+      "img": "/images/products/p7.png"
+    },
+    {
+      "id": 8,
+      "title": "نورسکا ۲ ظهر",
+      "price": 398430,
+      "score": 5,
+      "off": 12,
+      "img": "/images/products/p8.png"
     }
   ],
   "services": [
