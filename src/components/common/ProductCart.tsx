@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ProductsDataProps } from '@/types/components.types';
 
 const ProductCart = (props: ProductsDataProps): React.JSX.Element => {
+  console.log(props);
   return (
     <div className="p-2 md:p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
       <div className="relative mb-2 md:mb-5">
@@ -23,14 +24,33 @@ const ProductCart = (props: ProductsDataProps): React.JSX.Element => {
         {props.title}
       </h5>
       <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
-        <div className="text-teal-600 dark:text-emerald-500">
-          <span className="font-dana font-semibold text-base md:text-xl">154,000</span>
-          <span className="text-xs md:text-sm tracking-tighter">تومان</span>
-        </div>
-        <div className="offer">
-          <span className="text-xs md:text-xl">{props.price}</span>
-          <span className="hidden xl:inline text-sm tracking-tighter">تومان</span>
-        </div>
+        {props.count ? (
+          <>
+            {props.off ? (
+              <>
+                <div className="text-teal-600 dark:text-emerald-500">
+                  <span className="font-dana font-semibold text-base md:text-xl">
+                    {props.price - (props.price * props.off) / 100}
+                  </span>
+                  <span className="text-xs md:text-sm tracking-tighter">تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">{props.price}</span>
+                  <span className="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                </div>
+              </>
+            ) : (
+              <div className="text-teal-600 dark:text-emerald-500">
+                <span className="font-dana font-semibold text-base md:text-xl">{props.price}</span>
+                <span className="text-xs md:text-sm tracking-tighter">تومان</span>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="text-teal-600 dark:text-emerald-500">
+            <span className="text-red-400 text-base md:text-xl">موجود نیست</span>
+          </div>
+        )}
       </div>
       <div className="flex items-center justify-between mt-2.5">
         <div className="flex items-center gap-x-2.5 md:gap-x-3">
