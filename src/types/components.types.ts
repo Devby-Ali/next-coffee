@@ -20,4 +20,26 @@ interface ProductCategoryProps {
   productCategory: productCategorydata[];
 }
 
-export type { ProductsDataProps, ProductsProps, productCategorydata, ProductCategoryProps };
+interface blogProps {
+  id: number;
+  title: string;
+  img: string;
+  date: {
+    day : string,
+    month : string,
+    year : string
+  }
+}
+
+interface blogsProps {
+  blogsData: blogProps[];
+}
+
+export type {
+  ProductsDataProps,
+  ProductsProps,
+  productCategorydata,
+  ProductCategoryProps,
+  blogProps,
+  blogsProps,
+};
