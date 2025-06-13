@@ -1,11 +1,9 @@
-import Image from 'next/image';
 import React from 'react';
-import Icon from '../Icon';
 import SectionHeader from '../ui/SectionHeader';
 import { ProductsProps } from '@/types/components.types';
 import ProductCart from '../common/ProductCart';
 
-function Products({ productsData }: ProductsProps) {
+const Products = ({ productsData }: ProductsProps): React.JSX.Element => {
   return (
     <section className="products pt-8 md:pt-24">
       <div className="container">

@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { ProductsDataProps } from '@/types/components.types';
 
 const ProductCart = (props: ProductsDataProps): React.JSX.Element => {
-  console.log(props);
   return (
     <div className="p-2 md:p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
       <div className="relative mb-2 md:mb-5">
