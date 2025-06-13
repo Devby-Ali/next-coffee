@@ -5,15 +5,17 @@
       "title": "پودر قهوه ترک بن مانو مقدار 250 گرم",
       "price": 384000,
       "score": 5,
-      "off": 15,
+      "off": 0,
+      "count": 110,
       "img": "/images/products/p1.png"
     },
     {
       "id": 2,
       "title": "پودر قهوه اسپرسو مانوکا مقدار 250 گرم",
-      "price": 41200,
+      "price": 412000,
       "score": 5,
       "off": 10,
+      "count": 110,
       "img": "/images/products/p2.png"
     },
     {
@@ -22,6 +24,7 @@
       "price": 398430,
       "score": 5,
       "off": 10,
+      "count": 110,
       "img": "/images/products/p3.png"
     },
     {
@@ -30,6 +33,7 @@
       "price": 398430,
       "score": 5,
       "off": 10,
+      "count": 110,
       "img": "/images/products/p4.png"
     },
     {
@@ -37,7 +41,8 @@
       "title": "نورسکا ۹ صبح",
       "price": 398430,
       "score": 5,
-      "off": 12,
+      "off": 20,
+      "count": 110,
       "img": "/images/products/p5.png"
     },
     {
@@ -45,7 +50,8 @@
       "title": "نورسکا ۶ عصر",
       "price": 398430,
       "score": 5,
-      "off": 12,
+      "off": 20,
+      "count": 110,
       "img": "/images/products/p6.png"
     },
     {
@@ -53,7 +59,8 @@
       "title": "نورسکا ۸ شب",
       "price": 398430,
       "score": 5,
-      "off": 12,
+      "off": 20,
+      "count": 110,
       "img": "/images/products/p7.png"
     },
     {
@@ -61,8 +68,27 @@
       "title": "نورسکا ۲ ظهر",
       "price": 398430,
       "score": 5,
-      "off": 12,
+      "off": 20,
+      "count": 110,
       "img": "/images/products/p8.png"
+    },
+    {
+      "id": 9,
+      "title": "دانه قهوه ترکیبی اسپرسو رور",
+      "price": 780000,
+      "score": 5,
+      "off": 10,
+      "count": 0,
+      "img": "/images/products/p1.png"
+    },
+    {
+      "id": 10,
+      "title": "دانه قهوه ترکیبی اسپرسو ویسرو",
+      "price": 854000,
+      "score": 5,
+      "off": 10,
+      "count": 0,
+      "img": "/images/products/p2.png"
     }
   ],
   "productCategory": [

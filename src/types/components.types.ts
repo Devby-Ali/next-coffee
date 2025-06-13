@@ -4,6 +4,7 @@ interface ProductsDataProps {
   price: number;
   score: number;
   off: number;
+  count: number;
   img: string;
 }
 interface ProductsProps {
