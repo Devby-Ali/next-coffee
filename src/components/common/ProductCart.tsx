@@ -16,9 +16,11 @@ const ProductCart = (props: ProductsDataProps): React.JSX.Element => {
           loading="lazy"
           alt="product-1"
         />
-        <span className="absolute top-1.5 right-1.5 block h-5 md:h-7.5 text-xs/[24px] md:text-base/[34px] font-dana font-semibold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
-          {props.off}%
-        </span>
+        {props.off ? (
+          <span className="absolute top-1.5 right-1.5 block h-5 md:h-7.5 text-xs/[24px] md:text-base/[34px] font-dana font-semibold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
+            {props.off}%
+          </span>
+        ) : null}
       </div>
       <h5 className="font-dana text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
         {props.title}
