@@ -2,7 +2,7 @@ import Icon from "../Icon";
 
 function Header(): React.JSX.Element {
   return (
-    <section className="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-[url(../../public/images/headerBgMobile.webp)] md:bg-[url(../../public/images/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top]">
+    <section className="home relative h-50 xs:h-auto mt-14 md:mt-0 xs:aspect-[2/1] md:aspect-auto bg-[url(../../public/images/headerBgMobile.webp)] md:bg-[url(../../public/images/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top]">
       <div className="container 2xl:px-28 relative h-full md:min-h-screen flex justify-end items-center overflow-y-hidden">
         <div className="text-white">
           <h2 className="font-morabba font-bold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">
