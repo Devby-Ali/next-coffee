@@ -2,47 +2,48 @@ import React from 'react';
 import Icon from '../Icon';
 import Image from 'next/image';
 import { ProductsDataProps } from '@/types/components.types';
+import Link from 'next/link';
 
-const ProductCart = (props: ProductsDataProps): React.JSX.Element => {
+const ProductCart = (product: ProductsDataProps): React.JSX.Element => {
   return (
     <div className="p-2 md:p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
-      <div className="relative mb-2 md:mb-5">
+      <Link href={`/products/${product.id}`} className="relative mb-2 md:mb-5">
         <Image
           height={250}
           width={250}
-          src={props.img}
+          src={product.img}
           className="w-32 mx-auto md:w-auto"
           loading="lazy"
           alt="product-1"
         />
-        {props.off ? (
+        {product.off ? (
           <span className="absolute top-1.5 right-1.5 block h-5 md:h-7.5 text-xs/[24px] md:text-base/[34px] font-dana font-semibold bg-orange-300 text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full">
-            {props.off}%
+            {product.off}%
           </span>
         ) : null}
-      </div>
-      <h5 className="font-dana text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
-        {props.title}
-      </h5>
+      </Link>
+      <Link href={`/products/${product.id}`} className="font-dana text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+        {product.title}
+      </Link>
       <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
-        {props.count ? (
+        {product.count ? (
           <>
-            {props.off ? (
+            {product.off ? (
               <>
                 <div className="text-teal-600 dark:text-emerald-500">
                   <span className="font-dana font-semibold text-base md:text-xl">
-                    {props.price - (props.price * props.off) / 100}
+                    {product.price - (product.price * product.off) / 100}
                   </span>
                   <span className="text-xs md:text-sm tracking-tighter">تومان</span>
                 </div>
                 <div className="offer">
-                  <span className="text-xs md:text-xl">{props.price}</span>
+                  <span className="text-xs md:text-xl">{product.price}</span>
                   <span className="hidden xl:inline text-sm tracking-tighter">تومان</span>
                 </div>
               </>
             ) : (
               <div className="text-teal-600 dark:text-emerald-500">
-                <span className="font-dana font-semibold text-base md:text-xl">{props.price}</span>
+                <span className="font-dana font-semibold text-base md:text-xl">{product.price}</span>
                 <span className="text-xs md:text-sm tracking-tighter">تومان</span>
               </div>
             )}
