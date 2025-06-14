@@ -13,59 +13,44 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
   return (
     <>
       <Header />
-      <main className="container py-8 md:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Product Image Section */}
-          <div className="bg-white dark:bg-zinc-700 rounded-2xl p-4 md:p-8">
-            <div className="relative aspect-square">
-              <Image
-                src={product.img}
-                alt={product.title}
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              {product.off > 0 && (
-                <span className="absolute top-4 right-4 bg-orange-300 text-white dark:text-zinc-700 px-4 py-2 rounded-full font-semibold">
-                  {product.off}% تخفیف
-                </span>
-              )}
-            </div>
-          </div>
+      <main className="container py-8 md:py-16 ">
+        <div className="relative flex flex-col lg:flex-row items-center justify-between bg-white dark:bg-zinc-700 rounded-2xl">
+          {product.off > 0 && (
+            <span className="absolute top-3 right-3 bg-orange-300 text-white dark:text-zinc-700 px-4 py-2 rounded-3xl rounded-tr-lg font-semibold">
+              {product.off}% تخفیف
+            </span>
+          )}
 
-          {/* Product Info Section */}
-          <div className="bg-white dark:bg-zinc-700 rounded-2xl p-4 md:p-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-zinc-700 dark:text-white mb-4">
-              {product.title}
-            </h1>
-
-            {/* Price Section */}
-            <div className="flex items-center gap-4 mb-6">
-              {product.off > 0 ? (
-                <>
+          <div className="flex lg:flex-col-reverse justify-between w-full">
+            <div className="self-end lg:self-auto pr-4 md:pr-12 mb-8 md:mb-10">
+              <h1 className="text-xl md:text-2xl font-bold text-zinc-700 dark:text-white mb-4">
+                {product.title}
+              </h1>
+              {/* Price Section */}
+              <div className="flex flex-col sm:flex-row md:items-center gap-x-4 mb-3">
+                {product.off > 0 ? (
+                  <>
+                    <div className="text-teal-600 dark:text-emerald-500">
+                      <span className="text-2xl md:text-3xl font-bold">
+                        {Math.floor(product.price * (1 - product.off / 100)).toLocaleString()}
+                      </span>
+                      <span className="text-sm md:text-base mr-1">تومان</span>
+                    </div>
+                    <div className="text-gray-400 line-through">
+                      <span className="text-lg md:text-xl">{product.price.toLocaleString()}</span>
+                      <span className="text-sm md:text-base mr-1">تومان</span>
+                    </div>
+                  </>
+                ) : (
                   <div className="text-teal-600 dark:text-emerald-500">
                     <span className="text-2xl md:text-3xl font-bold">
-                      {Math.floor(product.price * (1 - product.off / 100)).toLocaleString()}
+                      {product.price.toLocaleString()}
                     </span>
                     <span className="text-sm md:text-base mr-1">تومان</span>
                   </div>
-                  <div className="text-gray-400 line-through">
-                    <span className="text-lg md:text-xl">{product.price.toLocaleString()}</span>
-                    <span className="text-sm md:text-base mr-1">تومان</span>
-                  </div>
-                </>
-              ) : (
-                <div className="text-teal-600 dark:text-emerald-500">
-                  <span className="text-2xl md:text-3xl font-bold">
-                    {product.price.toLocaleString()}
-                  </span>
-                  <span className="text-sm md:text-base mr-1">تومان</span>
-                </div>
-              )}
-            </div>
-
-            {/* Rating Section */}
-            <div className="flex items-center gap-2 mb-6">
+                )}
+              </div>
+              <div className="flex items-center gap-2">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, index) => (
                   <Icon
@@ -79,8 +64,17 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
                   />
                 ))}
               </div>
-              <span className="text-gray-600 dark:text-gray-300">({product.score} از 5)</span>
+              <span className="hidden xs:block text-gray-600 dark:text-gray-300">({product.score} از 5)</span>
             </div>
+            </div>
+            <div className="relative size-60 md:size-80">
+              <Image src={product.img} alt={product.title} fill />
+            </div>
+          </div>
+
+          <div className="px-4 md:px-12">
+            {/* Rating Section */}
+
 
             {/* Description Section */}
             <div className="mb-6">
