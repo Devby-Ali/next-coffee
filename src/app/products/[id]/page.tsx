@@ -14,16 +14,16 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
     <>
       <Header />
       <main className="container py-8 md:py-16 ">
-        <div className="relative flex flex-col lg:flex-row items-center justify-between bg-white dark:bg-zinc-700 rounded-2xl">
+        <div className="relative flex flex-col lg:flex-row items-center justify-between bg-white dark:bg-zinc-700 rounded-2xl xl:px-24">
           {product.off > 0 && (
             <span className="absolute top-3 right-3 bg-orange-300 text-white dark:text-zinc-700 px-4 py-2 rounded-3xl rounded-tr-lg font-semibold">
               {product.off}% تخفیف
             </span>
           )}
 
-          <div className="flex lg:flex-col-reverse justify-between w-full">
-            <div className="self-end lg:self-auto pr-4 md:pr-12 mb-8 md:mb-10">
-              <h1 className="text-xl md:text-2xl font-bold text-zinc-700 dark:text-white mb-4">
+          <div className="flex lg:flex-col-reverse justify-between mb-16 mt-8 w-full">
+            <div className="self-end sm:self-center lg:self-auto pr-4 sm:pr-12 x:pr-20 mt-8">
+              <h1 className="text-xl sm:text-nowrap md:text-2xl font-bold text-zinc-700 dark:text-white mb-4">
                 {product.title}
               </h1>
               {/* Price Section */}
@@ -50,35 +50,35 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
                   </div>
                 )}
               </div>
+              {/* Rating Section */}
               <div className="flex items-center gap-2">
-              <div className="flex text-yellow-400">
-                {[...Array(5)].map((_, index) => (
-                  <Icon
-                    key={index}
-                    name="star"
-                    className={`w-5 h-5 ${
-                      index < Math.floor(product.score)
-                        ? 'text-yellow-400'
-                        : 'text-gray-300 dark:text-gray-400'
-                    }`}
-                  />
-                ))}
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, index) => (
+                    <Icon
+                      key={index}
+                      name="star"
+                      className={`w-5 h-5 ${
+                        index < Math.floor(product.score)
+                          ? 'text-yellow-400'
+                          : 'text-gray-300 dark:text-gray-400'
+                      }`}
+                    />
+                  ))}
+                </div>
+                <span className="hidden xs:block text-gray-600 dark:text-gray-300">
+                  ({product.score} از 5)
+                </span>
               </div>
-              <span className="hidden xs:block text-gray-600 dark:text-gray-300">({product.score} از 5)</span>
             </div>
-            </div>
-            <div className="relative size-60 md:size-80">
-              <Image src={product.img} alt={product.title} fill />
+            <div className="relative w-80 sm:size-60 md:size-80">
+              <Image width={300} height={300} src={product.img} alt={product.title} />
             </div>
           </div>
 
-          <div className="px-4 md:px-12">
-            {/* Rating Section */}
-
-
+          <div className="px-4 sm:px-12 lg:pr-0 mb-4 sm:mb-12 lg:mb-0">
             {/* Description Section */}
-            <div className="mb-6">
-              <h2 className="text-xl font-semibold text-zinc-700 dark:text-white mb-3">
+            <div className="mb-6 lg:mb-17">
+              <h2 className="text-xl font-semibold text-zinc-700 dark:text-white mb-3 lg:mb-4">
                 توضیحات محصول
               </h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -87,7 +87,7 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
             </div>
 
             {/* Details Section */}
-            <div className="mb-6">
+            <div className="md:pb-2 lg:pb-6">
               <h2 className="text-xl font-semibold text-zinc-700 dark:text-white mb-3">
                 مشخصات فنی
               </h2>
@@ -102,7 +102,7 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
             </div>
 
             {/* Add to Cart Section */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 lg:gap-x-4 mt-8 sm:mt-12 lg:mt-14">
               <button className="flex-1 bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white py-3 px-6 rounded-xl transition-colors">
                 <Icon name="shopping-cart" className="w-5 h-5 inline-block ml-2" />
                 افزودن به سبد خرید
