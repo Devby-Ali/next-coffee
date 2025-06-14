@@ -13,7 +13,7 @@ export default async function Home() {
   const data = await fetchHomePageData().then((res) => res);
   return (
     <>
-      <Header />
+      <Header isHome />
       <main>
         <Products productsData={data.productsData} />
         <BannerCategory />

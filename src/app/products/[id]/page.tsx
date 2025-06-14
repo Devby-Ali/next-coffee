@@ -14,7 +14,7 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
     <>
       <Header />
       <main className="container py-8 md:py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Product Image Section */}
           <div className="bg-white dark:bg-zinc-700 rounded-2xl p-4 md:p-8">
             <div className="relative aspect-square">
