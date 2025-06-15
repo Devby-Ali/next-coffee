@@ -8,16 +8,16 @@ function Navbar() {
   return (
     <>
       <header>
-        <div className="fixed top-9 right-0 left-0 z-50 hidden md:flex items-center justify-between w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+        <div className="fixed top-6 right-0 left-0 z-50 hidden md:flex items-center justify-between w-[98%] lg:w-[90%] h-20 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
           {/* <!-- Logo & Menu --> */}
           <nav className="flex h-14 items-center gap-x-6 lg:gap-x-9">
             {/* <!-- Logo --> */}
-            <div className="shrink-0">
+            <div className="shrink-0 w-12.5">
               <Image width={59} height={56} src="/images/app-logo.png" alt="Golden Coffe" />
             </div>
 
             {/* <!-- Menu --> */}
-            <ul className="flex gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightest *:leading-[56px]">
+            <ul className="flex gap-x-5 lg:gap-x-9 text-lg text-gray-300 tracking-tightest *:leading-[56px]">
               <li className="font-dana menu__item--active">
                 <Link href="/">صفحه اصلی</Link>
               </li>
@@ -160,12 +160,10 @@ function Navbar() {
             {/* <!-- Login Link --> */}
             <a href="" className="flex items-center gap-x-2.5 tracking-tightest">
               <Icon name="arrow-left-end-on-rectangle" className="w-8 h-8" />
-              <span className="hidden xl:inline-block">ورود | ثبت‌نام</span>
+              <span className="hidden xl:inline-block text-lg">ورود | ثبت‌نام</span>
             </a>
           </div>
         </div>
-
-
       </header>
       <MobileNav />
     </>
