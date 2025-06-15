@@ -1,11 +1,12 @@
 import React from 'react';
 import Icon from '../Icon';
+import Link from 'next/link';
 
 interface SectionHeaderProps {
   title: string;
   subTitle?: string;
-  swiper?: boolean;
   btnTitle?: string;
+  btnHref?: string;
 }
 
 const SectionHeader = (props: SectionHeaderProps): React.JSX.Element => {
@@ -16,11 +17,13 @@ const SectionHeader = (props: SectionHeaderProps): React.JSX.Element => {
         {props.subTitle && <span className="section-subtitle">{props.subTitle}</span>}
       </div>
 
-      <a href="#" className="section-link">
-        <span className="hidden md:inline-block">{props.btnTitle}</span>
-        <span className="inline-block md:hidden">مشاهده همه</span>
-        <Icon name="chevron-left-mini" className="w-5 h-5" />
-      </a>
+      {props.btnTitle && props.btnHref && (
+        <Link href={`${props.btnHref}`} className="section-link">
+          <span className="hidden md:inline-block">{props.btnTitle}</span>
+          <span className="inline-block md:hidden">مشاهده همه</span>
+          <Icon name="chevron-left-mini" className="w-5 h-5" />
+        </Link>
+      )}
     </div>
   );
 };
