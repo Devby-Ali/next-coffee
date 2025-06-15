@@ -3,7 +3,8 @@ import SectionHeader from '../ui/SectionHeader';
 import { ProductsProps } from '@/types/components.types';
 import ProductCart from '../common/ProductCart';
 
-const Products = ({ productsData }: ProductsProps): React.JSX.Element => {
+const LatestProducts = ({ productsData }: ProductsProps): React.JSX.Element => {
+  const products = productsData.reverse().slice(0, 10);
   return (
     <section className="products pt-8 md:pt-24">
       <div className="container">
@@ -16,13 +17,13 @@ const Products = ({ productsData }: ProductsProps): React.JSX.Element => {
 
         {/* <!-- Section Body --> */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3.5 md:gap-5">
-          {productsData.map((product) => (
+          {products.map((product) => (
             <ProductCart key={product.id} {...product} />
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Products;
+export default LatestProducts;

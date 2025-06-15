@@ -5,7 +5,7 @@ import Blogs from '@/components/Template/Blogs';
 import CoffeeClub from '@/components/Template/CoffeeClub';
 import ContactUs from '@/components/Template/ContactUs';
 import ProductCategory from '@/components/Template/ProductCategory';
-import Products from '@/components/Template/Products';
+import LatestProducts from '@/components/Template/LatestProducts';
 import Services from '@/components/Template/Services';
 import { fetchHomePageData } from '@/lib/data';
 
@@ -15,7 +15,7 @@ export default async function Home() {
     <>
       <Header isHome />
       <main>
-        <Products productsData={data.productsData} />
+        <LatestProducts productsData={data.productsData} />
         <BannerCategory />
         <ProductCategory productCategory={data.productCategoryData} />
         <BestSellingProducts productsData={data.productsData} />
