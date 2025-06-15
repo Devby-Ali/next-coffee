@@ -3,7 +3,7 @@ import Icon from '../Icon';
 
 function Footer() {
   return (
-    <footer className="relative bg-zinc-700 py-8 md:pb-11 md:pt-15.5">
+    <footer className="relative bg-zinc-700 py-8 md:pb-11 md:pt-15.5 mt-12 md:mt-36">
       <Icon
         name="curve-footer"
         className="absolute top-0 right-0 left-0 mx-auto hidden md:inline-block w-25 h-5.5 text-gray-100 dark:text-zinc-800"
