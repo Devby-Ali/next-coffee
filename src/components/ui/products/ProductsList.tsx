@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import ProductCart from '../../common/ProductCart';
+import ProductCart from '../../ui/products/ProductCart';
 import LoadMore from '../LoadMore';
 import { ProductsDataProps } from '@/types/components.types';
 
