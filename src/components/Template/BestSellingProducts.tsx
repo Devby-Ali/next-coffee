@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ProductsProps } from '@/types/components.types';
-import ProductCart from '../common/ProductCart';
+import ProductCart from '../ui/products/ProductCart';
 
 // Import Swiper styles
 import 'swiper/css';

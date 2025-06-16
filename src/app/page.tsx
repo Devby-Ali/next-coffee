@@ -12,19 +12,17 @@ import { fetchHomePageData } from '@/lib/data';
 export default async function Home() {
   const data = await fetchHomePageData().then((res) => res);
   return (
-    <>
+    <main>
       <Header isHome />
-      <main>
-        <LatestProducts productsData={data.productsData} />
-        <BannerCategory />
-        <ProductCategory productCategory={data.productCategoryData} />
-        <BestSellingProducts productsData={data.productsData} />
-        <CoffeeClub />
-        <Blogs blogsData={data.blogsData} />
-        <ContactUs />
-        <Services />
-      </main>
-    </>
+      <LatestProducts productsData={data.productsData} />
+      <BannerCategory />
+      <ProductCategory productCategory={data.productCategoryData} />
+      <BestSellingProducts productsData={data.productsData} />
+      <CoffeeClub />
+      <Blogs blogsData={data.blogsData} />
+      <ContactUs />
+      <Services />
+    </main>
   );
 }
 

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { ProductCategoryProps } from '@/types/components.types';
-import ProductCategoryCart from '../common/ProductCategoryCart';
+import ProductCategoryCart from '../ui/products/ProductCategoryCart';
 
 const ProductCategory = ({ productCategory }: ProductCategoryProps): React.JSX.Element => {
   return (

@@ -1,18 +1,19 @@
 import React from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import { ProductsProps } from '@/types/components.types';
-import ProductCart from '../common/ProductCart';
+import ProductCart from '../ui/products/ProductCart';
 
 const LatestProducts = ({ productsData }: ProductsProps): React.JSX.Element => {
   const products = productsData.reverse().slice(0, 10);
   return (
-    <section className="products pt-8 md:pt-24">
+    <section className="products my-8 md:my-24 mb-32">
       <div className="container">
         {/* <!-- Section Head --> */}
         <SectionHeader
           title={'جدیدترین محصولات'}
           subTitle={'فرآوری شده از دانه قهوه'}
           btnTitle={'مشاهده همه محصولات'}
+          btnHref={"/products"}
         />
 
         {/* <!-- Section Body --> */}

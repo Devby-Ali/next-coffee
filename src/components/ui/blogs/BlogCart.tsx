@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../Icon';
+import Icon from '../../Icon';
 import Image from 'next/image';
 import { blogProps } from '@/types/components.types';
 

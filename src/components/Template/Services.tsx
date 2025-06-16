@@ -2,7 +2,7 @@ import React from 'react';
 
 function Services() {
   return (
-    <section className="services mb-12 md:mb-36">
+    <section className="services">
       <div className="container">
         <div className="flex items-center justify-between gap-y-11 flex-wrap *:w-1/2 lg:*:w-auto text-zinc-700 dark:text-white">
           <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">

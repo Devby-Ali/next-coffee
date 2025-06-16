@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import { blogsProps } from '@/types/components.types';
-import BlogCart from '../common/BlogCart';
+import BlogCart from '../ui/blogs/BlogCart';
 
 const Blogs = ({ blogsData }: blogsProps): React.JSX.Element => {
   return (
