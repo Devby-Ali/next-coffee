@@ -96,7 +96,9 @@ export default async function ProductDetails(props: { params: Promise<{ id: stri
                   {Object.entries(product.details).map(([key, value]) => (
                     <div key={key} className="flex items-center gap-2">
                       <span className="text-gray-600 dark:text-gray-300">{key}:</span>
-                      <span className="text-zinc-700 dark:text-white font-medium">{value}</span>
+                      <span className="text-zinc-700 dark:text-white font-medium">
+                        {String(value)}
+                      </span>
                     </div>
                   ))}
                 </div>
