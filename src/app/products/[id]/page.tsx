@@ -5,7 +5,7 @@ import Header from '@/components/common/Header';
 import Icon from '@/components/Icon';
 import { fetchProductById } from '@/lib/data';
 
-export default async function ProductDetails(props: { params: Promise<{ id: string }> }) {
+export default async function ProductPage(props: { params: Promise<{ id: string }> }) {
   //   console.log(params.id);
   const params = await props.params;
   const id = params.id;
