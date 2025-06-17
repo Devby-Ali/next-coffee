@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const BlogCard = (blog: blogProps): React.JSX.Element => {
   return (
-    <div className="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
+    <div className="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-white/8 dark:backdrop-blur-[3px] shadow-normal rounded-2xl">
       <Link href={`/blog/${blog.id}`} className="relative block w-32.5 h-32.5 shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden">
         <Image
           height={378}
@@ -15,7 +15,7 @@ const BlogCard = (blog: blogProps): React.JSX.Element => {
           className="h-full sm:h-auto object-cover"
           alt="Blog 1"
         />
-        <div className="absolute inset-0 w-full h-full hidden md:flex-center invisible opacity-0 group-hover:visible group-hover:opacity-100 bg-gradient-to-r from-orange-200/80 to-orange-300/80 transition-all delay-75">
+        <div className="absolute inset-0 w-full h-full hidden md:flex-center invisible opacity-0 group-hover:visible group-hover:opacity-100 bg-gradient-to-r from-orange-200/65 to-orange-300/65 transition-all delay-75">
           <Icon name="logo-type" className="w-34.5 h-13.5 text-amber-900" />
         </div>
       </Link>

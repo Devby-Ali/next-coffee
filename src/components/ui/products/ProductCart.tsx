@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const ProductCart = (product: ProductsDataProps): React.JSX.Element => {
   return (
-    <div className="p-2 md:p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
-      <Link href={`/product/${product.id}`} className="relative mb-2 md:mb-5">
+    <div className="p-2 md:p-5 bg-white dark:bg-white/8 dark:backdrop-blur-[3px] shadow-normal rounded-2xl">
+      <Link href={`/products/${product.id}`} className="relative mb-2 md:mb-5">
         <Image
           height={250}
           width={250}
