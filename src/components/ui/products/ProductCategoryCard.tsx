@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { productCategorydata } from '@/types/components.types';
 
-const ProductCategoryCart = (props: productCategorydata): React.JSX.Element => {
+const ProductCategoryCard = (props: productCategorydata): React.JSX.Element => {
   return (
     <div className="w-25 md:w-50 text-center">
       <a href="#">
@@ -21,4 +21,4 @@ const ProductCategoryCart = (props: productCategorydata): React.JSX.Element => {
   );
 }
 
-export default ProductCategoryCart;
+export default ProductCategoryCard;

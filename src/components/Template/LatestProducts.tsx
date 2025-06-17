@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import { ProductsProps } from '@/types/components.types';
-import ProductCart from '../ui/products/ProductCart';
+import ProductCard from '../ui/products/ProductCard';
 
 const LatestProducts = ({ productsData }: ProductsProps): React.JSX.Element => {
   const products = productsData.reverse().slice(0, 10);
@@ -13,13 +13,13 @@ const LatestProducts = ({ productsData }: ProductsProps): React.JSX.Element => {
           title={'جدیدترین محصولات'}
           subTitle={'فرآوری شده از دانه قهوه'}
           btnTitle={'مشاهده همه محصولات'}
-          btnHref={"/products"}
+          btnHref={'/products'}
         />
 
         {/* <!-- Section Body --> */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3.5 md:gap-5">
           {products.map((product) => (
-            <ProductCart key={product.id} {...product} />
+            <ProductCard key={product.id} {...product} />
           ))}
         </div>
       </div>

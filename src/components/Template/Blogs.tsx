@@ -1,17 +1,17 @@
 import React from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import { blogsProps } from '@/types/components.types';
-import BlogCart from '../ui/blogs/BlogCart';
+import BlogCard from '../ui/blogs/BlogCard';
 
 const Blogs = ({ blogsData }: blogsProps): React.JSX.Element => {
   return (
     <section className="blogs mb-8 md:mb-28">
       <div className="container">
-        <SectionHeader title="مطالب خواندنی" subTitle="مشاهده همه مطالب" btnTitle="مشاهده همه" />
+        <SectionHeader title="مطالب خواندنی" subTitle="مشاهده همه مطالب" btnTitle="مشاهده همه" btnHref='/blogs' />
         {/* <!-- Section Content --> */}
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
           {blogsData.map((blog) => (
-            <BlogCart key={blog.id} {...blog} />
+            <BlogCard key={blog.id} {...blog} />
           ))}
         </div>
       </div>

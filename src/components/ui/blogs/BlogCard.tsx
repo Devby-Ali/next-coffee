@@ -7,7 +7,7 @@ import Link from 'next/link';
 const BlogCard = (blog: blogProps): React.JSX.Element => {
   return (
     <div className="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-white/8 dark:backdrop-blur-[3px] shadow-normal rounded-2xl">
-      <Link href={`/blog/${blog.id}`} className="relative block w-32.5 h-32.5 shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden">
+      <Link href={`/blogs/${blog.id}`} className="relative block w-32.5 h-32.5 shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden">
         <Image
           height={378}
           width={569}
@@ -21,7 +21,7 @@ const BlogCard = (blog: blogProps): React.JSX.Element => {
       </Link>
       <div className="w-full flex flex-col sm:flex-row items-start justify-between">
         <Link
-          href={`/blog/${blog.id}`}
+          href={`/blogs/${blog.id}`}
           className="font-semibold md:font-normal ml-1.5 sm:ml-0 mt-2.5 sm:mt-0 text-sm/7 md:text-lg line-clamp-2 max-w-[193px] text-zinc-700 dark:text-white"
         >
           {blog.title}

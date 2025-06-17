@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ProductsDataProps } from '@/types/components.types';
 import Link from 'next/link';
 
-const ProductCart = (product: ProductsDataProps): React.JSX.Element => {
+const ProductCard = (product: ProductsDataProps): React.JSX.Element => {
   return (
     <div className="p-2 md:p-5 bg-white dark:bg-white/8 dark:backdrop-blur-[3px] shadow-normal rounded-2xl">
       <Link href={`/products/${product.id}`} className="relative mb-2 md:mb-5">
@@ -75,4 +75,4 @@ const ProductCart = (product: ProductsDataProps): React.JSX.Element => {
   );
 };
 
-export default ProductCart;
+export default ProductCard;

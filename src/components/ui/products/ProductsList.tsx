@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import ProductCart from '../../ui/products/ProductCart';
+import ProductCard from './ProductCard';
 import LoadMore from '../LoadMore';
 import { ProductsDataProps } from '@/types/components.types';
 
@@ -41,7 +41,7 @@ const ProductsList: React.FC<ProductsListProps> = ({
     <>
       <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3.5 md:gap-5">
         {products.map((product: ProductsDataProps) => (
-          <ProductCart key={product.id} {...product} />
+          <ProductCard key={product.id} {...product} />
         ))}
       </section>
       <LoadMore

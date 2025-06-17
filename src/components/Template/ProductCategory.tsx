@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { ProductCategoryProps } from '@/types/components.types';
-import ProductCategoryCart from '../ui/products/ProductCategoryCart';
+import ProductCategoryCard from '../ui/products/ProductCategoryCard';
 
 const ProductCategory = ({ productCategory }: ProductCategoryProps): React.JSX.Element => {
   return (
@@ -9,7 +9,7 @@ const ProductCategory = ({ productCategory }: ProductCategoryProps): React.JSX.E
       <div className="container">
         <div className="flex-center font-semibold gap-y-6 gap-x-8 md:gap-16.5 2xl:gap-x-24 flex-wrap">
           {productCategory.map((product) => (
-            <ProductCategoryCart key={product.id} {...product} />
+            <ProductCategoryCard key={product.id} {...product} />
           ))}
         </div>
       </div>
