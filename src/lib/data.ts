@@ -27,3 +27,16 @@ export async function fetchProductById(id: string) {
     throw new Error('Failed to fetch product details');
   }
 }
+
+
+export async function fetchBlogById(id: string) {
+  try {
+    const response = await fetch('http://localhost:4000/blogs');
+    const blogs = await response.json();
+    const blog = blogs.find((blog: { id: string; }) => blog.id === id)
+    return blog
+  } catch (error) {
+    console.error('Error fetching blog:', error);
+    throw new Error('Failed to fetch blog details');
+  }
+}
