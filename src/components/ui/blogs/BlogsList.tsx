@@ -3,13 +3,7 @@
 import React, { useState } from 'react';
 import BlogCard from './BlogCard';
 import LoadMore from '../LoadMore';
-import { BlogProps } from '@/types/components.types';
-
-interface BlogsListProps {
-  initialBlogs: BlogProps[];
-  initialPage: number;
-  totalPages: number;
-}
+import { BlogProps, BlogsListProps } from '@/types/components.types';
 
 const BlogsList: React.FC<BlogsListProps> = ({ initialBlogs, initialPage, totalPages }) => {
   const [blogs, setBlogs] = useState<BlogProps[]>(initialBlogs);

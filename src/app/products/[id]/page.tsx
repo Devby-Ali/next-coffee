@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Header from '@/components/common/Header';
-// import { fetchProductById } from '@/lib/data';
-import Icon from '@/components/Icon';
 import { fetchProductById } from '@/lib/data';
+import Icon from '@/components/Icon';
 
 export default async function ProductPage(props: { params: Promise<{ id: string }> }) {
-  //   console.log(params.id);
   const params = await props.params;
   const id = params.id;
   const product = await fetchProductById(id);

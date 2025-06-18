@@ -1,13 +1,16 @@
 import React from 'react';
 import Icon from '../../Icon';
 import Image from 'next/image';
-import { blogProps } from '@/types/components.types';
+import { BlogProps } from '@/types/components.types';
 import Link from 'next/link';
 
-const BlogCard = (blog: blogProps): React.JSX.Element => {
+const BlogCard = (blog: BlogProps): React.JSX.Element => {
   return (
     <div className="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-white/8 dark:backdrop-blur-[3px] shadow-normal rounded-2xl">
-      <Link href={`/blogs/${blog.id}`} className="relative block w-32.5 h-32.5 shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden">
+      <Link
+        href={`/blogs/${blog.id}`}
+        className="relative block w-32.5 h-32.5 shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden"
+      >
         <Image
           height={378}
           width={569}

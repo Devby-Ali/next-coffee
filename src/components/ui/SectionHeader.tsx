@@ -1,13 +1,8 @@
 import React from 'react';
 import Icon from '../Icon';
 import Link from 'next/link';
+import { SectionHeaderProps } from '@/types/components.types';
 
-interface SectionHeaderProps {
-  title: string;
-  subTitle?: string;
-  btnTitle?: string;
-  btnHref?: string;
-}
 
 const SectionHeader = (props: SectionHeaderProps): React.JSX.Element => {
   return (

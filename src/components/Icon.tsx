@@ -1,10 +1,6 @@
-interface IconProps {
-  name: string;
-  className?: string;
-  size?: number;
-}
+import { IconProps } from '@/types/components.types';
 
-export default function Icon({ name, className = ''}: IconProps) {
+export default function Icon({ name, className = '' }: IconProps) {
   return (
     <svg className={className} aria-hidden="true">
       <use href={`#${name}`} />

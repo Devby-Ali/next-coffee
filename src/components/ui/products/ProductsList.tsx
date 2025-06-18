@@ -3,13 +3,8 @@
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import LoadMore from '../LoadMore';
-import { ProductsDataProps } from '@/types/components.types';
+import { ProductsDataProps, ProductsListProps } from '@/types/components.types';
 
-interface ProductsListProps {
-  initialProducts: ProductsDataProps[];
-  initialPage: number;
-  totalPages: number;
-}
 
 const ProductsList: React.FC<ProductsListProps> = ({
   initialProducts,

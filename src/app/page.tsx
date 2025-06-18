@@ -16,7 +16,7 @@ export default async function Home() {
       <Header isHome />
       <LatestProducts productsData={data.productsData} />
       <BannerCategory />
-      <ProductCategory productCategory={data.productCategoryData} />
+      <ProductCategory productCategory={data.productCategorydata} />
       <BestSellingProducts productsData={data.productsData} />
       <CoffeeClub />
       <Blogs blogsData={data.blogsData} />

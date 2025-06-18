@@ -1,12 +1,6 @@
 import React from 'react';
 import Icon from '../Icon';
-
-interface LoadMoreProps {
-  currentPage: number;
-  totalPages: number;
-  onLoadMore: () => void;
-  isLoading: boolean;
-}
+import { LoadMoreProps } from '@/types/components.types';
 
 const LoadMore: React.FC<LoadMoreProps> = ({ currentPage, totalPages, onLoadMore, isLoading }) => {
   if (currentPage >= totalPages) return null;

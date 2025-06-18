@@ -4,12 +4,12 @@ export async function fetchHomePageData() {
     const productsData = await productResponse.json();
 
     const productCategoryResponse = await fetch('http://localhost:4000/productCategory');
-    const productCategoryData = await productCategoryResponse.json();
+    const productCategorydata = await productCategoryResponse.json();
 
     const blogsResponse = await fetch('http://localhost:4000/blogs');
     const blogsData = await blogsResponse.json();
 
-    return { productCategoryData, productsData, blogsData };
+    return { productCategorydata, productsData, blogsData };
   } catch (error) {
     console.error('json-server Error:', error);
     throw new Error('Failed to fetch the fetch Home Page Data.');
@@ -20,21 +20,20 @@ export async function fetchProductById(id: string) {
   try {
     const response = await fetch('http://localhost:4000/products');
     const products = await response.json();
-    const product = products.find((product: { id: string; }) => product.id === id)
-    return product
+    const product = products.find((product: { id: string }) => product.id === id);
+    return product;
   } catch (error) {
     console.error('Error fetching product:', error);
     throw new Error('Failed to fetch product details');
   }
 }
 
-
 export async function fetchBlogById(id: string) {
   try {
     const response = await fetch('http://localhost:4000/blogs');
     const blogs = await response.json();
-    const blog = blogs.find((blog: { id: string; }) => blog.id === id)
-    return blog
+    const blog = blogs.find((blog: { id: string }) => blog.id === id);
+    return blog;
   } catch (error) {
     console.error('Error fetching blog:', error);
     throw new Error('Failed to fetch blog details');

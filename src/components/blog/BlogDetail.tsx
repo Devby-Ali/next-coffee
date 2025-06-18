@@ -1,25 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Icon from '../Icon';
+import { BlogProps } from '@/types/components.types';
 
-interface BlogDetailProps {
-  blog: {
-    id: number;
-    title: string;
-    img: string;
-    date: {
-      day: string;
-      month: string;
-      year: string;
-    };
-    content: string;
-    author: string;
-    tags: string[];
-    readTime: string;
-  };
-}
-
-const BlogDetail = ({ blog }: BlogDetailProps): React.JSX.Element => {
+const BlogDetail = ({ blog }: BlogProps): React.JSX.Element => {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
       {/* Header */}
@@ -43,12 +27,7 @@ const BlogDetail = ({ blog }: BlogDetailProps): React.JSX.Element => {
 
       {/* Featured Image */}
       <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
-        <Image
-          src={blog.img}
-          alt={blog.title}
-          fill
-          className="object-cover"
-        />
+        <Image src={blog.img} alt={blog.title} fill className="object-cover" />
       </div>
 
       {/* Content */}
