@@ -7,8 +7,8 @@ async function getInitialBlogs() {
     const response = await fetch('http://localhost:4000/blogs');
     const blogs = await response.json();
 
-    const initialBlogs = blogs.slice(0, 10);
-    const totalPages = Math.ceil(blogs.length / 10);
+    const initialBlogs = blogs.slice(0, 8);
+    const totalPages = Math.ceil(blogs.length / 8);
 
     return {
       blogs: initialBlogs,
