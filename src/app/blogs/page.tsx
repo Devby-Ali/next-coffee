@@ -1,6 +1,11 @@
 import Header from '@/components/common/Header';
 import SectionHeader from '@/components/ui/SectionHeader';
 import BlogsList from '@/components/ui/blogs/BlogsList';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blogs'
+}
 
 async function getInitialBlogs() {
   try {
