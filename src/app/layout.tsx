@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | SkyCoffee',
     default: 'SkyCoffee',
   },
-  description: 'Next Coffee is a modern web application designed for coffee enthusiasts to explore, order, and learn about various coffee blends and brewing techniques.',
+  description: 'Sky Coffee is a modern web application designed for coffee enthusiasts to explore, order, and learn about various coffee blends and brewing techniques.',
 };
 
 export default function RootLayout({

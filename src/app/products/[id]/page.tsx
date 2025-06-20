@@ -3,6 +3,11 @@ import Image from 'next/image';
 import Header from '@/components/common/Header';
 import { fetchProductById } from '@/lib/data';
 import Icon from '@/components/Icon';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Product info'
+}
 
 export default async function ProductPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
