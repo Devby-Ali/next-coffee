@@ -1,7 +1,11 @@
 import React from 'react';
 import BlogDetail from '@/components/blog/BlogDetail';
 import { fetchBlogById } from '@/lib/data';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Blog'
+}
 
 async function BlogPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
