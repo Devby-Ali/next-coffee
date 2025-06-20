@@ -10,8 +10,7 @@ export const metadata: Metadata = {
     template: '%s | SkyCoffee',
     default: 'SkyCoffee',
   },
-  description: 'The official Next.js Course Dashboard, built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  description: 'Next Coffee is a modern web application designed for coffee enthusiasts to explore, order, and learn about various coffee blends and brewing techniques.',
 };
 
 export default function RootLayout({

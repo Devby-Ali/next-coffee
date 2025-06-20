@@ -1,6 +1,11 @@
 import Header from '@/components/common/Header';
 import SectionHeader from '@/components/ui/SectionHeader';
 import ProductsList from '@/components/ui/products/ProductsList';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Products'
+}
 
 async function getInitialProducts() {
   try {
