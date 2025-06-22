@@ -1,20 +1,31 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Icon from '../Icon';
-import Image from 'next/image';
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { ProductsProps } from '@/types/components.types';
+import { ProductsDataProps } from '@/types/components.types';
 import ProductCart from '../ui/products/ProductCard';
+import { fetchProducts } from '@/lib/data';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const BestSellingProducts = ({ productsData }: ProductsProps): React.JSX.Element => {
+export default function BestSellingProducts() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const besProducts = async () => {
+      const bestProducts = await fetchProducts();
+      setProducts(
+        bestProducts.productsData.filter((product: ProductsDataProps) => product.score >= 4)
+      );
+    };
+    besProducts();
+  }, []);
+
   const swiperRef = useRef<SwiperType | null>(null);
-  const bestSelling = productsData.filter((product) => product.score >= 4);
 
   return (
     <section className="best-selling mb-8 md:mb-20">
@@ -68,7 +79,7 @@ const BestSellingProducts = ({ productsData }: ProductsProps): React.JSX.Element
           }}
         >
           {/* <!-- Slides --> */}
-          {bestSelling.map((product) => (
+          {products.map((product: ProductsDataProps) => (
             <SwiperSlide>
               <ProductCart key={product.id} {...product} />
             </SwiperSlide>
@@ -77,6 +88,4 @@ const BestSellingProducts = ({ productsData }: ProductsProps): React.JSX.Element
       </div>
     </section>
   );
-};
-
-export default BestSellingProducts;
+}
