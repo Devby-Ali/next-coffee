@@ -1,12 +1,9 @@
 export async function fetchHomePageData() {
   try {
-    const productCategoryResponse = await fetch('http://localhost:4000/productCategory');
-    const productCategorydata = await productCategoryResponse.json();
-
     const blogsResponse = await fetch('http://localhost:4000/blogs');
     const blogsData = await blogsResponse.json();
 
-    return { productCategorydata, blogsData };
+    return { blogsData };
   } catch (error) {
     console.error('json-server Error:', error);
     throw new Error('Failed to fetch the fetch Home Page Data.');
@@ -22,6 +19,18 @@ export async function fetchProducts() {
   } catch (error) {
     console.error('json-server Error:', error);
     throw new Error('Failed to fetch the fetch Products Data.');
+  }
+}
+
+export async function fetchProductCategory() {
+  try {
+    const productCategoryResponse = await fetch('http://localhost:4000/productCategory');
+    const productCategorydata = await productCategoryResponse.json();
+
+    return { productCategorydata };
+  } catch (error) {
+    console.error('json-server Error:', error);
+    throw new Error('Failed to fetch the fetch product category data.');
   }
 }
 
