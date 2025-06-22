@@ -6,6 +6,12 @@ interface ProductsDataProps {
   off: number;
   count: number;
   img: string;
+  description: string;
+  details: object;
+  ingredients: string;
+  storage: string;
+  expiryDate: string;
+  relatedProducts: number[];
 }
 interface ProductsProps {
   productsData: ProductsDataProps[];

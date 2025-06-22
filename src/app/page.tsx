@@ -17,7 +17,7 @@ export default async function Home() {
       <LatestProducts />
       <BannerCategory />
       <ProductCategory productCategory={data.productCategorydata} />
-      <BestSellingProducts productsData={data.productsData} />
+      <BestSellingProducts />
       <CoffeeClub />
       <Blogs blogsData={data.blogsData} />
       <ContactUs />
