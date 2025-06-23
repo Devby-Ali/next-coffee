@@ -1,15 +1,3 @@
-export async function fetchHomePageData() {
-  try {
-    const blogsResponse = await fetch('http://localhost:4000/blogs');
-    const blogsData = await blogsResponse.json();
-
-    return { blogsData };
-  } catch (error) {
-    console.error('json-server Error:', error);
-    throw new Error('Failed to fetch the fetch Home Page Data.');
-  }
-}
-
 export async function fetchProducts() {
   try {
     const productResponse = await fetch('http://localhost:4000/products');

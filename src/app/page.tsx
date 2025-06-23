@@ -7,10 +7,8 @@ import ContactUs from '@/components/Template/ContactUs';
 import ProductCategory from '@/components/Template/ProductCategory';
 import LatestProducts from '@/components/Template/LatestProducts';
 import Services from '@/components/Template/Services';
-import { fetchHomePageData } from '@/lib/data';
 
 export default async function Home() {
-  const data = await fetchHomePageData().then((res) => res);
   return (
     <main>
       <Header isHome />
@@ -19,7 +17,7 @@ export default async function Home() {
       <ProductCategory />
       <BestSellingProducts />
       <CoffeeClub />
-      <Blogs blogsData={data.blogsData} />
+      <Blogs />
       <ContactUs />
       <Services />
     </main>
