@@ -27,21 +27,19 @@ interface ProductCategoryProps {
 }
 
 interface BlogProps {
-  blog: {
-    id: number;
-    title: string;
-    img: string;
-    date: {
-      day: string;
-      month: string;
-      year: string;
-    };
-    content: string;
-    body: string;
-    author: string;
-    tags: string[];
-    readTime: string;
+  id: number;
+  title: string;
+  img: string;
+  date: {
+    day: string;
+    month: string;
+    year: string;
   };
+  content: string;
+  body: string;
+  author: string;
+  tags: string[];
+  readTime: string;
 }
 
 interface BlogsProps {
