@@ -1,10 +1,11 @@
 import React from 'react';
 import SectionHeader from '../ui/SectionHeader';
-import { BlogsProps } from '@/types/components.types';
+import { BlogProps } from '@/types/components.types';
 import BlogCard from '../ui/blogs/BlogCard';
+import { fetchBlogs } from '@/lib/data';
 
-const Blogs = ({ blogsData }: BlogsProps): React.JSX.Element => {
-  const blogs = blogsData.reverse().slice(0, 8);
+export default async function Blogs() {
+  const blogs = (await fetchBlogs()).blogsData.reverse().slice(0, 8)
   return (
     <section className="blogs mb-8 md:mb-28">
       <div className="container">
@@ -16,7 +17,7 @@ const Blogs = ({ blogsData }: BlogsProps): React.JSX.Element => {
         />
         {/* <!-- Section Content --> */}
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
-          {blogs.map((blog) => (
+          {blogs.map((blog: BlogProps) => (
             <BlogCard key={blog.id} {...blog} />
           ))}
         </div>
@@ -24,5 +25,3 @@ const Blogs = ({ blogsData }: BlogsProps): React.JSX.Element => {
     </section>
   );
 };
-
-export default Blogs;
