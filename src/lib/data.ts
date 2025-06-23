@@ -34,6 +34,18 @@ export async function fetchProductCategory() {
   }
 }
 
+export async function fetchBlogs() {
+  try {
+    const blogsResponse = await fetch('http://localhost:4000/blogs');
+    const blogsData = await blogsResponse.json();
+
+    return { blogsData };
+  } catch (error) {
+    console.error('json-server Error:', error);
+    throw new Error('Failed to fetch the fetch blogs data.');
+  }
+}
+
 
 export async function fetchProductById(id: string) {
   try {
