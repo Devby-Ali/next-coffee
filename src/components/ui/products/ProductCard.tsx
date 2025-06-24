@@ -3,6 +3,7 @@ import Icon from '../../Icon';
 import Image from 'next/image';
 import { ProductsDataProps } from '@/types/components.types';
 import Link from 'next/link';
+import { randomUUID } from 'crypto';
 
 const ProductCard = (product: ProductsDataProps): React.JSX.Element => {
   return (
@@ -22,7 +23,10 @@ const ProductCard = (product: ProductsDataProps): React.JSX.Element => {
           </span>
         ) : null}
       </Link>
-      <Link href={`/products/${product.id}`} className="font-dana text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2">
+      <Link
+        href={`/products/${product.id}`}
+        className="font-dana text-sm md:text-xl h-10 md:h-14 text-zinc-700 dark:text-white line-clamp-2"
+      >
         {product.title}
       </Link>
       <div className="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
@@ -43,7 +47,9 @@ const ProductCard = (product: ProductsDataProps): React.JSX.Element => {
               </>
             ) : (
               <div className="text-teal-600 dark:text-emerald-500">
-                <span className="font-dana font-semibold text-base md:text-xl">{product.price}</span>
+                <span className="font-dana font-semibold text-base md:text-xl">
+                  {product.price}
+                </span>
                 <span className="text-xs md:text-sm tracking-tighter">تومان</span>
               </div>
             )}
@@ -64,11 +70,19 @@ const ProductCard = (product: ProductsDataProps): React.JSX.Element => {
           </span>
         </div>
         <div className="flex text-yellow-400">
-          <Icon name="star" className="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400" />
-          <Icon name="star" className="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400" />
-          <Icon name="star" className="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400" />
-          <Icon name="star" className="w-4 h-4 md:w-6 md:h-6" />
-          <Icon name="star" className="w-4 h-4 md:w-6 md:h-6" />
+          {new Array(Math.trunc(product.score)).fill(
+            <span>
+              <Icon name="star" className="w-4 h-4 md:w-6 md:h-6" />
+            </span>
+          )}
+          {new Array(5 -Math.trunc(product.score)).fill(
+            <span>
+              <Icon
+                name="star"
+                className="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
+              />
+            </span>
+          )}
         </div>
       </div>
     </div>
