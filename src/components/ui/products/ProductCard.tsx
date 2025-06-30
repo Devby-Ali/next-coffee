@@ -69,20 +69,35 @@ const ProductCard = (product: ProductsDataProps): React.JSX.Element => {
             <Icon name="arrows-right-left" className="w-4 h-4 md:w-6 md:h-6" />
           </span>
         </div>
-        <div className="flex text-yellow-400">
+        {/* <div className="flex text-yellow-400">
           {new Array(Math.trunc(product.score)).fill(
-            <span>
+            <div key={Math.random() + 8}>
               <Icon name="star" className="w-4 h-4 md:w-6 md:h-6" />
-            </span>
+            </div>
           )}
           {new Array(5 -Math.trunc(product.score)).fill(
-            <span>
+            <div key={Math.random() + 8}>
               <Icon
                 name="star"
                 className="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
               />
-            </span>
+            </div>
           )}
+        </div> */}
+        <div className="flex text-yellow-400">
+          {new Array(Math.trunc(product.score)).fill(0).map(() => (
+            <div key={Math.random() + 8}>
+              <Icon name="star" className="w-4 h-4 md:w-6 md:h-6" />
+            </div>
+          ))}
+          {new Array(5 - Math.trunc(product.score)).fill(0).map(() => (
+            <div key={Math.random() + 8}>
+              <Icon
+                name="star"
+                className="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
