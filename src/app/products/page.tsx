@@ -1,17 +1,17 @@
 import Header from '@/components/common/Header';
 import SectionHeader from '@/components/ui/SectionHeader';
 import ProductsList from '@/components/ui/products/ProductsList';
+import { fetchProducts } from '@/lib/data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Products'
-}
+  title: 'Products',
+};
 
 async function getInitialProducts() {
   try {
-    const response = await fetch('http://localhost:4000/products');
-    const products = await response.json();
-
+    const response = await fetchProducts();
+    const products = await response.productsData
     const initialProducts = products.slice(0, 10);
     const totalPages = Math.ceil(products.length / 10);
 
