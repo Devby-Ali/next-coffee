@@ -1,6 +1,7 @@
 import Header from '@/components/common/Header';
 import SectionHeader from '@/components/ui/SectionHeader';
 import BlogsList from '@/components/ui/blogs/BlogsList';
+import { fetchBlogs } from '@/lib/data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 
 async function getInitialBlogs() {
   try {
-    const response = await fetch('http://localhost:4000/blogs');
-    const blogs = await response.json();
+    const response = await fetchBlogs();
+    const blogs = await response.blogsData;
 
     const initialBlogs = blogs.slice(0, 8);
     const totalPages = Math.ceil(blogs.length / 8);
