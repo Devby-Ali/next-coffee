@@ -9,18 +9,16 @@ export async function GET(request: Request) {
   const limit = parseInt(searchParams.get('limit') || '10');
 
   try {
-    const response = await fetch('http://localhost:4000/products');
-    const products = await response.json();
-    const startIndex = (page - 1) * limit;
-    const endIndex = page * limit;
-    const paginatedProducts = products.slice(startIndex, endIndex);
-
     const dbPath = path.join(process.cwd(), 'data', 'db.json');
     const data = fs.readFileSync(dbPath);
     const parsedData = JSON.parse(data);
 
+    const products = await parsedData.products;
+    const startIndex = (page - 1) * limit;
+    const endIndex = page * limit;
+    const paginatedProducts = products.slice(startIndex, endIndex);
+
     return NextResponse.json({
-      allProducts: parsedData.products,
       products: paginatedProducts,
       currentPage: page,
       totalPages: Math.ceil(products.length / limit),
