@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
-const fs = require("fs");
-const path = require("path");
-
 export async function GET(request: Request) {
+  const fs = require('fs');
+  const path = require('path');
+
   const { searchParams } = new URL(request.url);
   const page = parseInt(searchParams.get('page') || '1');
   const limit = parseInt(searchParams.get('limit') || '10');
@@ -11,12 +11,16 @@ export async function GET(request: Request) {
   try {
     const response = await fetch('http://localhost:4000/products');
     const products = await response.json();
-
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
     const paginatedProducts = products.slice(startIndex, endIndex);
 
+    const dbPath = path.join(process.cwd(), 'data', 'db.json');
+    const data = fs.readFileSync(dbPath);
+    const parsedData = JSON.parse(data);
+
     return NextResponse.json({
+      allProducts: parsedData.products,
       products: paginatedProducts,
       currentPage: page,
       totalPages: Math.ceil(products.length / limit),
